@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+    <style>
+        h4{
+            color: red;
+        }
+        div {
+            width: 120px;
+            height: 120px;
+            background-color: cyan;
+        }
+        #d2 {
+            color: red;
+        }
+        .error{
+            background-color: red;
+            color: white;
+        }
+        .success {
+            background-color: green;
+            color: white;
+        }
+        #d2:hover {
+            background-color: deeppink;
+        }
+        #d2,h4,.error {
+            text-decoration: underline;
+
+        }
+        a:link {
+            color: gray;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active {
+            color: orange;
+        }
+        [type="text"] {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<h4>我是标题</h4>
+<p>我是段落</p>
+<a href="#" >我是超链接</a>
+<h4>我是标题</h4>
+<div>我是div1</div>
+<div id="d2">我是div2</div>
+<div>我是div3</div>
+<hr>
+<span class="error">用户名已被占用</span>
+<span class="error">操作失败</span>
+<br>
+<span class="success">有效的手机号</span>
+<span class="success">新增成功</span>
+<hr>
+<a href="https://baidu.com">百度首页</a>
+<a href="abc">错误地址</a>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS选择器</title>
+    <style>
+        /*元素选择器*/
+        h1 {
+            color: red;
+        }
+        .aa {
+            background-color: yellow;
+        }
+        #bb {
+            color: aqua;
+        }
+        * {
+            font-family: "Sitka Display",serif;
+        }
+        .cc > .dd {
+            color: orange;
+        }
+        .cc p {
+            color: blueviolet;
+        }
+        .ooo + p {
+            background-color: brown;
+        }
+        .qqq:hover {
+            background-color: deeppink;
+        }
+    </style>
+
+</head>
+<body>
+<h1>这是元素选择器</h1>
+<h2 class="aa">这是类选择器</h2>
+<h3 id="bb">这是id选择器</h3>
+<div class="cc">
+    <p class="dd">这是子元素选择器</p>
+    <div>
+        <p class="ll">这是后代选择器</p>
+    </div>
+</div>
+<p>并集选择器1</p>
+<h3 class="ooo">这是一个相邻选择器示例</h3>
+<p>并集选择器2</p>
+<h3 class="qqq">这是一个伪类选择器</h3>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js的三种引用方式</title>
+</head>
+<body>
+<button onclick="console.log(6666)">点击既玩</button>
+<button onclick="alert('please login')">玩游戏</button>
+<div id="a"></div>
+<script>
+    console.log('我看看执行了没');
+    console.log(a);
+</script>
+<script src="js/01.js">
+    console.log('你看我执行吗');
+</script>
+</body>
+</html>
