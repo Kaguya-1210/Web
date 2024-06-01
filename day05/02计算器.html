@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算器</title>
+</head>
+<body>
+
+    <label>
+        num1:
+        <input type="text" id="n1">
+        <br>
+        num2:
+        <input  type="text" id="n2">
+        <br>
+        <button onclick="JSQ('+')" >加</button>
+        <button onclick="JSQ('-')" >-</button>
+        <button onclick="JSQ('*')" >*</button>
+        <button onclick="JSQ('/')" >/</button>
+    </label>
+    <h4>运算结果:<span id="s"></span></h4>
+
+<script>
+    function JSQ(s) {
+        let nn1 = parseFloat(document.getElementById('n1').value);
+        let nn2 = parseFloat(document.getElementById('n2').value);
+        let element = document.querySelector('#s');
+        console.log(element);
+        let num = eval(nn1 + s + nn2);
+        console.log(num);
+        element.innerHTML = num;
+    }
+</script>
+</body>
+</html>

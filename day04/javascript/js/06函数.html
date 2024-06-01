@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06函数</title>
+</head>
+<body>
+<script>
+  function f1() {
+    console.log('fuck!');
+  }
+
+  function b(n) {
+    console.log(n);
+  }
+
+  function c(n1, n2) {
+    console.log(n1 + n2);
+  }
+  f1();
+  b(555);
+  c(1);
+  c(1 ,1);
+  c(1, 3, 12);
+
+  function l() {
+    console.log(arguments);
+  }
+
+  function po(ii, oo) {
+    return ii + oo;
+  }
+  l(1, 2, 3, 4);
+  l(3, 1, 2);
+  var po1 = po(4,5);
+  po(7,8)
+  console.log(po1);
+
+</script>
+</body>
+</html>
