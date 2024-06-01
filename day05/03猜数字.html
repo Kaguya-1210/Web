@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>猜数字</title>
+</head>
+<body>
+<label>
+  猜数字:
+  <input type="text" placeholder="input number" id="n">
+  <button onclick="c()" >猜</button>
+</label>
+<span id="s"></span>
+
+<script>
+  const number = parseInt(Math.random() * 100);
+  let sum = 0;
+  function c() {
+    let number1 = parseInt(document.getElementById("n").value);
+    console.log(number);
+    if (number1 === number) {
+      console.log('猜对了');
+      document.querySelector('#s').innerHTML = "猜对了,用了" + sum + "次";
+    }else if (number1 > number) {
+      console.log("大了");
+      sum++;
+    }else if (number1 < number) {
+      console.log('小了');
+      sum++;
+    }
+  }
+</script>
+</body>
+</html>

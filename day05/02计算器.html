@@ -27,6 +27,10 @@
     function JSQ(s) {
         let nn1 = parseFloat(document.getElementById('n1').value);
         let nn2 = parseFloat(document.getElementById('n2').value);
+        if (isNaN(nn1) || isNaN(nn2)) {
+            alert("pleas input number");
+            return;
+        }
         let element = document.querySelector('#s');
         console.log(element);
         let num = eval(nn1 + s + nn2);
