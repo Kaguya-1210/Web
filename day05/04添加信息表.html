@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>员工信息表练习</title>
+</head>
+<body>
+        <input type="text" placeholder="请输入员工姓名" id="name">
+        <input type="text" placeholder="请输入员工工资" id="salary">
+        <input type="text" placeholder="请输入员工岗位" id="gw">
+        <button onclick="add()">点我添加员工</button>
+    <hr>
+
+    <table border="1">
+        <caption>员工表</caption>
+        <tr>
+            <th>姓名</th>
+            <th>工资</th>
+            <th>岗位</th>
+        </tr>
+    </table>
+
+<script>
+    function add() {
+        let t1 = document.querySelector("table");
+        t1.append(document.createElement("tr"));
+        t1.append(d3=document.createElement("td"));
+        t1.append(d2=document.createElement("td"));
+        t1.append(d1 = document.createElement("td"));
+
+        d1.append(document.getElementById("gw").value);
+        d2.append(document.getElementById("salary").value);
+        d3.append(document.getElementById("name").value);
+
+    }
+</script>
+</body>
+</html>
